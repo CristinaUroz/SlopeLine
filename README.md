@@ -1,4 +1,6 @@
+
 /////////////////////////////////////////////////////////////////////
+
 CATALÀ //////////////////////////////////////////////////////////////
 
 APLICACIÓ ANDROID CAPAÇ DE LLEGIR I INTERPRETAR EL RELLEU DE MAPES TOPOGRÀFICS
@@ -11,7 +13,9 @@ realitzar diferents càlculs (desnivell acummulat, represetnació en 2D del rell
 estimat de realització...) sobre rutes proposades per l'usuari. 
 El nom d'aqueta aplicació és SlopeLine.
 
+
 /////////////////////////////////////////////////////////////////////
+
 CASTELLANO //////////////////////////////////////////////////////////
 
 APLICACIÓN ANDROID CAPAZ DE LEER E INTERPRETAR EL RELIEVE DE MAPAS TOPOGRÁFICOS 
@@ -24,7 +28,9 @@ diferentes cáculos (desnivel acumulado, representación en 2D del relieve, tiem
 de realización...) sobre rutas propuestas por el usuario. 
 El nombre de esta aplicación es SlopeLine.
 
+
 /////////////////////////////////////////////////////////////////////
+
 ENGLISH /////////////////////////////////////////////////////////////
 
 ANDROID APPLICATION FOR READING AND INTERPRETING THE RELIEF OF TOPOGRAPHIC MAPS
