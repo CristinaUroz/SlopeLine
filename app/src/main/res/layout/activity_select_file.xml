@@ -17,14 +17,12 @@
 
     <ImageView
         android:id="@+id/image_Map"
-        android:layout_width="300dp"
-        android:layout_height="400dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:layout_width="350dp"
+        android:layout_height="380dp"
         app:srcCompat="@android:color/transparent"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:id="@+id/image_Next"
@@ -35,15 +33,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="330dp"
+    <SeekBar
+        android:id="@+id/tolerance_bar"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
-        android:indeterminate="false"
-        android:layout_below="@+id/image_Next"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        android:layout_marginBottom="11dp" />
 
 </RelativeLayout>
