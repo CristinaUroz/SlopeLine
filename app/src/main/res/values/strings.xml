@@ -10,56 +10,34 @@
     <string name="ok">Ok</string>
     <string name="action_settings">Settings</string>
 
-    <string name="preference_category_blur">Blur Image Settings</string>
-    <string name="preference_key_blur_kernel">preferenceKeyBlurKernel</string>
-    <string name="preference_title_blur_kernel">Kernel Size</string>
-    <string name="preference_summary_blur_kernel">kernel size used for blurring the image</string>
-    <string name="preference_dialog_title_blur_kernel">Enter blur kernel size</string>
-    <string name="preference_category_canny">Canny Edge Detection Settings</string>
-    <string name="preference_key_canny_otsu">PreferenceKeyCannyOtsu</string>
-    <string name="preference_title_canny_otsu">Use OTSU threshold</string>
-    <string name="preference_summary_canny_otsu">If enabled, uses otsu threshold for canny edge detection</string>
-    <string name="preference_key_canny_threshold_min">PreferenceKeyCannyThresholdMin</string>
-    <string name="preference_title_canny_threshold_min">Canny Min Threshold</string>
-    <string name="preference_summary_canny_threshold_min">min threshold to be used for canny edge detection</string>
-    <string name="preference_dialog_title_canny_threshold_min">Min Threshold</string>
-    <string name="preference_key_canny_threshold_max">PreferenceKeyCannyThresholdMax</string>
-    <string name="preference_title_canny_threshold_max">Canny Max Threshold</string>
-    <string name="preference_summary_canny_threshold_max">max threshold to be used for canny edge detection</string>
-    <string name="preference_dialog_title_canny_threshold_max">Max Threshold</string>
-    <string name="preference_default_value_blur_kernel">3</string>
-    <string name="preference_default_value_canny_threshold_min">30</string>
-    <string name="preference_default_value_canny_threshold_max">200</string>
-    <string name="preference_category_contours">Contours Detection</string>
-    <string name="preference_key_contours_type">PreferenceKeyContoursType</string>
-    <string name="preference_title_contours_type">Type</string>
-    <string name="preference_summary_contours_type">contours detection type</string>
-    <string name="preference_dialog_title_contours_type">Select Contours Type</string>
-    <string name="preference_entries_contours_type_external">EXTERNAL</string>
-    <string name="preference_entries_contours_type_tree">TREE</string>
-    <string name="preference_entries_contours_type_list">LIST</string>
-    <string name="preference_entries_contours_type_ccomp">CCOMP</string>
-    <string name="preference_entries_contours_type_floodfill">FLOOD FILL</string>
-    <string name="preference_entry_value_contours_type_external">0</string>
-    <string name="preference_entry_value_contours_type_list">1</string>
-    <string name="preference_entry_value_contours_type_ccomp">2</string>
-    <string name="preference_entry_value_contours_type_tree">3</string>
-    <string name="preference_entry_value_contours_type_floodfill">4</string>
-    <string name="preference_key_contours_ignore_area_size">PreferenceKeyContoursIgnoreAreaSize</string>
-    <string name="preference_title_contours_ignore_area_size">Ignore Area size</string>
-    <string name="preference_summary_contours_ignore_area_size">Ignore shapes with area size less than this value</string>
-    <string name="preference_dialog_title_contours_ignore_area_size">Enter area size to ignore</string>
-    <string name="preference_default_contours_ignore_area_size">3000</string>
-    <string name="preference_key_contours_ignore_concave">PreferenceKeyContoursIgnoreConcave</string>
-    <string name="preference_title_contours_ignore_concave">Ignore concave shapes</string>
-    <string name="preference_summary_contours_ignore_concave">Enabling this will ignore any shapes that are concave</string>
-    <string name="preference_key_contours_draw_filtered_shapes">PreferencesKeyContoursDrawFilteredShapes</string>
-    <string name="preference_title_contours_draw_filtered_shapes">Draw filtered Shapes</string>
-    <string name="preference_summary_contours_draw_filtered_shapes">Draw all the filtered contours from above settings</string>
+    <string name="preferences">Preferences</string>
+
+    <string name="preference_key_skipped_pixels">PreferenceSkippedPixels</string>
+    <string name="preference_title_skipped_pixels">Skipped Pixels</string>
+    <string name="preference_summary_skipped_pixels">Number the pixels to skip during the processing [from 1 to 5]</string>
+    <string name="preference_dialog_skipped_pixels">Skipped Pixels</string>
+    <string name="preference_default_value_skipped_pixels">1</string>
+
+    <string name="preference_key_research_area">PreferenceResearchArea</string>
+    <string name="preference_title_research_area">Research Area</string>
+    <string name="preference_summary_research_area">Number of pixels that will conform the research area of same line pixels [from 1 to 15]</string>
+    <string name="preference_dialog_research_area">ResearchArea</string>
+    <string name="preference_default_value_research_area">5</string>
+
+
     <string name="info">Information</string>
     <string name="Opencvnotavailalbe">OpenCV not available</string>
     <string name="Retry">Retry</string>
     <string name="Processing">Processing</string>
+    <string name="what_save">What do you want to save?</string>
+    <string name="save">Save</string>
+    <string name="image">Image</string>
+    <string name="Lines_info">Lines information</string>
+    <string name="Save_all">Save all</string>
+    <string name="image_saved">Image saved succesfully</string>
+    <string name="lines_saved">Lines information saved succefully</string>
+    <string name="image_lines_saved">Image and lines\' information saved succefully</string>
+
 
     <array name="binaritzation">
         <item>0000000000100000100001000;0010000010100000000001000</item>
@@ -915,4 +893,424 @@
         <item>0001000100001000010000100;0001000000001101100000100</item>
         <item>0011000110000100001000010;0010000000110000011000010</item>
     </array>
+
+    <array name="colors_tots">
+        <item>"#00FA9A"</item>
+        <item>"#800080"</item>
+        <item>"#CDBE70"</item>
+        <item>"#8B4789"</item>
+        <item>"#FF7F50"</item>
+        <item>"#6CA6CD"</item>
+        <item>"#EED8AE"</item>
+        <item>"#9370DB"</item>
+        <item>"#191970"</item>
+        <item>"#2E8B57"</item>
+        <item>"#B0C4DE"</item>
+        <item>"#ADD8E6"</item>
+        <item>"#CD950C"</item>
+        <item>"#EE00EE"</item>
+        <item>"#3D59AB"</item>
+        <item>"#EE8262"</item>
+        <item>"#FF82AB"</item>
+        <item>"#DB7093"</item>
+        <item>"#FF0000"</item>
+        <item>"#CD9B1D"</item>
+        <item>"#BCD2EE"</item>
+        <item>"#8470FF"</item>
+        <item>"#EE7942"</item>
+        <item>"#98F5FF"</item>
+        <item>"#EED5D2"</item>
+        <item>"#FCE6C9"</item>
+        <item>"#CD3278"</item>
+        <item>"#808A87"</item>
+        <item>"#FFE1FF"</item>
+        <item>"#668B8B"</item>
+        <item>"#8B1C62"</item>
+        <item>"#8B7B8B"</item>
+        <item>"#D02090"</item>
+        <item>"#7D26CD"</item>
+        <item>"#FF8C00"</item>
+        <item>"#F4A460"</item>
+        <item>"#00FF00"</item>
+        <item>"#EECBAD"</item>
+        <item>"#B9D3EE"</item>
+        <item>"#87CEFF"</item>
+        <item>"#FF83FA"</item>
+        <item>"#FFA07A"</item>
+        <item>"#33A1C9"</item>
+        <item>"#E3A869"</item>
+        <item>"#CDC1C5"</item>
+        <item>"#8B4726"</item>
+        <item>"#BDB76B"</item>
+        <item>"#FF4040"</item>
+        <item>"#EEE5DE"</item>
+        <item>"#388E8E"</item>
+        <item>"#008B00"</item>
+        <item>"#EE2C2C"</item>
+        <item>"#CDB38B"</item>
+        <item>"#C1CDCD"</item>
+        <item>"#6A5ACD"</item>
+        <item>"#8B8378"</item>
+        <item>"#FF1493"</item>
+        <item>"#CD7054"</item>
+        <item>"#8B8970"</item>
+        <item>"#00EE76"</item>
+        <item>"#B0E0E6"</item>
+        <item>"#698B69"</item>
+        <item>"#FF7D40"</item>
+        <item>"#7171C6"</item>
+        <item>"#8B3A3A"</item>
+        <item>"#00CD00"</item>
+        <item>"#EE30A7"</item>
+        <item>"#BCEE68"</item>
+        <item>"#B452CD"</item>
+        <item>"#9FB6CD"</item>
+        <item>"#00BFFF"</item>
+        <item>"#CDB7B5"</item>
+        <item>"#9AFF9A"</item>
+        <item>"#EE3B3B"</item>
+        <item>"#68838B"</item>
+        <item>"#C0FF3E"</item>
+        <item>"#00FF7F"</item>
+        <item>"#8B8B83"</item>
+        <item>"#EE82EE"</item>
+        <item>"#A4D3EE"</item>
+        <item>"#E0EEE0"</item>
+        <item>"#9BCD9B"</item>
+        <item>"#528B8B"</item>
+        <item>"#BC8F8F"</item>
+        <item>"#B4CDCD"</item>
+        <item>"#FF6103"</item>
+        <item>"#00C5CD"</item>
+        <item>"#104E8B"</item>
+        <item>"#C6E2FF"</item>
+        <item>"#872657"</item>
+        <item>"#CD96CD"</item>
+        <item>"#8B636C"</item>
+        <item>"#3CB371"</item>
+        <item>"#8B8386"</item>
+        <item>"#D1EEEE"</item>
+        <item>"#8B7500"</item>
+        <item>"#C1FFC1"</item>
+        <item>"#FFC125"</item>
+        <item>"#F5DEB3"</item>
+        <item>"#CD8C95"</item>
+        <item>"#C5C1AA"</item>
+        <item>"#AB82FF"</item>
+        <item>"#9C661F"</item>
+        <item>"#C1CDC1"</item>
+        <item>"#CD69C9"</item>
+        <item>"#5E2612"</item>
+        <item>"#CD5B45"</item>
+        <item>"#00EEEE"</item>
+        <item>"#8B3E2F"</item>
+        <item>"#7CCD7C"</item>
+        <item>"#008080"</item>
+        <item>"#CD2626"</item>
+        <item>"#2F4F4F"</item>
+        <item>"#00688B"</item>
+        <item>"#FF7256"</item>
+        <item>"#EEEE00"</item>
+        <item>"#7FFFD4"</item>
+        <item>"#B23AEE"</item>
+        <item>"#CDCDC1"</item>
+        <item>"#66CDAA"</item>
+        <item>"#EEC900"</item>
+        <item>"#A2CD5A"</item>
+        <item>"#27408B"</item>
+        <item>"#87CEFA"</item>
+        <item>"#6C7B8B"</item>
+        <item>"#5CACEE"</item>
+        <item>"#1E90FF"</item>
+        <item>"#8B475D"</item>
+        <item>"#54FF9F"</item>
+        <item>"#EEB422"</item>
+        <item>"#009ACD"</item>
+        <item>"#7CFC00"</item>
+        <item>"#A52A2A"</item>
+        <item>"#8B4C39"</item>
+        <item>"#8B5F65"</item>
+        <item>"#EE6AA7"</item>
+        <item>"#FF6A6A"</item>
+        <item>"#E066FF"</item>
+        <item>"#4A708B"</item>
+        <item>"#DEB887"</item>
+        <item>"#6959CD"</item>
+        <item>"#EE6363"</item>
+        <item>"#00CDCD"</item>
+        <item>"#F5F5DC"</item>
+        <item>"#BBFFFF"</item>
+        <item>"#A0522D"</item>
+        <item>"#0000EE"</item>
+        <item>"#8B0A50"</item>
+        <item>"#4B0082"</item>
+        <item>"#CDC9A5"</item>
+        <item>"#CD4F39"</item>
+        <item>"#9A32CD"</item>
+        <item>"#000080"</item>
+        <item>"#8B7765"</item>
+        <item>"#006400"</item>
+        <item>"#8EE5EE"</item>
+        <item>"#CDC8B1"</item>
+        <item>"#EEEEE0"</item>
+        <item>"#9F79EE"</item>
+        <item>"#EE1289"</item>
+        <item>"#EEDFCC"</item>
+        <item>"#63B8FF"</item>
+        <item>"#7B68EE"</item>
+        <item>"#CDC9C9"</item>
+        <item>"#CD6839"</item>
+        <item>"#4682B4"</item>
+        <item>"#8B2500"</item>
+        <item>"#00C78C"</item>
+        <item>"#9ACD32"</item>
+        <item>"#FAF0E6"</item>
+        <item>"#FAEBD7"</item>
+        <item>"#D8BFD8"</item>
+        <item>"#556B2F"</item>
+        <item>"#00FFFF"</item>
+        <item>"#E3CF57"</item>
+        <item>"#4F94CD"</item>
+        <item>"#473C8B"</item>
+        <item>"#00E5EE"</item>
+        <item>"#CDB79E"</item>
+        <item>"#8B3A62"</item>
+        <item>"#EE6A50"</item>
+        <item>"#8B4500"</item>
+        <item>"#FFD39B"</item>
+        <item>"#8B5A00"</item>
+        <item>"#EEE9E9"</item>
+        <item>"#698B22"</item>
+        <item>"#8E8E38"</item>
+        <item>"#CDAA7D"</item>
+        <item>"#FFDEAD"</item>
+        <item>"#CDCDB4"</item>
+        <item>"#D2B48C"</item>
+        <item>"#ADFF2F"</item>
+        <item>"#FFEFDB"</item>
+        <item>"#FF6EB4"</item>
+        <item>"#436EEE"</item>
+        <item>"#8B8878"</item>
+        <item>"#836FFF"</item>
+        <item>"#EE9A49"</item>
+        <item>"#7EC0EE"</item>
+        <item>"#FFEFD5"</item>
+        <item>"#71C671"</item>
+        <item>"#96CDCD"</item>
+        <item>"#5D478B"</item>
+        <item>"#36648B"</item>
+        <item>"#FFC0CB"</item>
+        <item>"#98FB98"</item>
+        <item>"#FFB5C5"</item>
+        <item>"#FFE4E1"</item>
+        <item>"#FFB6C1"</item>
+        <item>"#FFC1C1"</item>
+        <item>"#00008B"</item>
+        <item>"#8B7355"</item>
+        <item>"#CD2990"</item>
+        <item>"#8B6508"</item>
+        <item>"#CD9B9B"</item>
+        <item>"#EEE685"</item>
+        <item>"#FF3030"</item>
+        <item>"#3A5FCD"</item>
+        <item>"#F0E68C"</item>
+        <item>"#808069"</item>
+        <item>"#EEE0E5"</item>
+        <item>"#8A2BE2"</item>
+        <item>"#8E388E"</item>
+        <item>"#8B1A1A"</item>
+        <item>"#ED9121"</item>
+        <item>"#8B7D6B"</item>
+        <item>"#CD853F"</item>
+        <item>"#00868B"</item>
+        <item>"#607B8B"</item>
+        <item>"#EEEED1"</item>
+        <item>"#4169E1"</item>
+        <item>"#8B4513"</item>
+        <item>"#FFB90F"</item>
+        <item>"#E9967A"</item>
+        <item>"#FFDAB9"</item>
+        <item>"#292421"</item>
+        <item>"#68228B"</item>
+        <item>"#EEB4B4"</item>
+        <item>"#EE7600"</item>
+        <item>"#FFE4B5"</item>
+        <item>"#3D9140"</item>
+        <item>"#B4EEB4"</item>
+        <item>"#EE9A00"</item>
+        <item>"#8B5742"</item>
+        <item>"#FFF68F"</item>
+        <item>"#EEE9BF"</item>
+        <item>"#8B8989"</item>
+        <item>"#EED2EE"</item>
+        <item>"#FF8000"</item>
+        <item>"#CDC5BF"</item>
+        <item>"#EE799F"</item>
+        <item>"#FF9912"</item>
+        <item>"#FFD700"</item>
+        <item>"#5F9EA0"</item>
+        <item>"#B22222"</item>
+        <item>"#6495ED"</item>
+        <item>"#66CD00"</item>
+        <item>"#CDAF95"</item>
+        <item>"#FF8247"</item>
+        <item>"#DAA520"</item>
+        <item>"#458B00"</item>
+        <item>"#CD661D"</item>
+        <item>"#EECFA1"</item>
+        <item>"#EED5B7"</item>
+        <item>"#FF00FF"</item>
+        <item>"#B0171F"</item>
+        <item>"#7A378B"</item>
+        <item>"#FF3E96"</item>
+        <item>"#FF6347"</item>
+        <item>"#8A3324"</item>
+        <item>"#C67171"</item>
+        <item>"#EEAEEE"</item>
+        <item>"#FFEC8B"</item>
+        <item>"#7FFF00"</item>
+        <item>"#8DEEEE"</item>
+        <item>"#FF7F00"</item>
+        <item>"#7A67EE"</item>
+        <item>"#551A8B"</item>
+        <item>"#48D1CC"</item>
+        <item>"#CDB5CD"</item>
+        <item>"#EE3A8C"</item>
+        <item>"#308014"</item>
+        <item>"#8DB6CD"</item>
+        <item>"#838B8B"</item>
+        <item>"#FF69B4"</item>
+        <item>"#00CED1"</item>
+        <item>"#B0E2FF"</item>
+        <item>"#8B6914"</item>
+        <item>"#B2DFEE"</item>
+        <item>"#BA55D3"</item>
+        <item>"#CDAD00"</item>
+        <item>"#CD3700"</item>
+        <item>"#1C86EE"</item>
+        <item>"#FF7F24"</item>
+        <item>"#008B8B"</item>
+        <item>"#6E7B8B"</item>
+        <item>"#EE7621"</item>
+        <item>"#8B2323"</item>
+        <item>"#EEC591"</item>
+        <item>"#8B2252"</item>
+        <item>"#EE5C42"</item>
+        <item>"#483D8B"</item>
+        <item>"#8B864E"</item>
+        <item>"#B8860B"</item>
+        <item>"#03A89E"</item>
+        <item>"#912CEE"</item>
+        <item>"#CDCD00"</item>
+        <item>"#EEDC82"</item>
+        <item>"#8B795E"</item>
+        <item>"#C71585"</item>
+        <item>"#CDBA96"</item>
+        <item>"#FF8C69"</item>
+        <item>"#97FFFF"</item>
+        <item>"#8968CD"</item>
+        <item>"#79CDCD"</item>
+        <item>"#FFAEB9"</item>
+        <item>"#9B30FF"</item>
+        <item>"#CD5555"</item>
+        <item>"#8B8B7A"</item>
+        <item>"#808000"</item>
+        <item>"#76EEC6"</item>
+        <item>"#8B008B"</item>
+        <item>"#FFEBCD"</item>
+        <item>"#6B8E23"</item>
+        <item>"#CD5C5C"</item>
+        <item>"#8B7D7B"</item>
+        <item>"#228B22"</item>
+        <item>"#90EE90"</item>
+        <item>"#8FBC8F"</item>
+        <item>"#00EE00"</item>
+        <item>"#A2B5CD"</item>
+        <item>"#BF3EFF"</item>
+        <item>"#4EEE94"</item>
+        <item>"#8A360F"</item>
+        <item>"#8B7E66"</item>
+        <item>"#0000FF"</item>
+        <item>"#548B54"</item>
+        <item>"#9400D3"</item>
+        <item>"#CD3333"</item>
+        <item>"#8B5A2B"</item>
+        <item>"#8B8682"</item>
+        <item>"#FFE4C4"</item>
+        <item>"#FFBBFF"</item>
+        <item>"#CD0000"</item>
+        <item>"#CD6090"</item>
+        <item>"#CDC0B0"</item>
+        <item>"#EE4000"</item>
+        <item>"#CD00CD"</item>
+        <item>"#EE7AE9"</item>
+        <item>"#D2691E"</item>
+        <item>"#00C957"</item>
+        <item>"#CDC673"</item>
+        <item>"#53868B"</item>
+        <item>"#FF34B3"</item>
+        <item>"#CD6600"</item>
+        <item>"#FFFF00"</item>
+        <item>"#DC143C"</item>
+        <item>"#DA70D6"</item>
+        <item>"#CD6889"</item>
+        <item>"#8B8B00"</item>
+        <item>"#FFE7BA"</item>
+        <item>"#008000"</item>
+        <item>"#CD1076"</item>
+        <item>"#9932CC"</item>
+        <item>"#CD919E"</item>
+        <item>"#FF4500"</item>
+        <item>"#EEE8CD"</item>
+        <item>"#838B83"</item>
+        <item>"#DDA0DD"</item>
+        <item>"#0000CD"</item>
+        <item>"#00B2EE"</item>
+        <item>"#00CD66"</item>
+        <item>"#EE0000"</item>
+        <item>"#76EE00"</item>
+        <item>"#E0EEEE"</item>
+        <item>"#CD8162"</item>
+        <item>"#AEEEEE"</item>
+        <item>"#8B3626"</item>
+        <item>"#EEA9B8"</item>
+        <item>"#7AC5CD"</item>
+        <item>"#EEE8AA"</item>
+        <item>"#7A8B8B"</item>
+        <item>"#8B814C"</item>
+        <item>"#8B6969"</item>
+        <item>"#708090"</item>
+        <item>"#9AC0CD"</item>
+        <item>"#458B74"</item>
+        <item>"#40E0D0"</item>
+        <item>"#8B0000"</item>
+        <item>"#20B2AA"</item>
+        <item>"#008B45"</item>
+        <item>"#BDFCC9"</item>
+        <item>"#EEA2AD"</item>
+        <item>"#D15FEE"</item>
+        <item>"#800000"</item>
+        <item>"#8B668B"</item>
+        <item>"#C76114"</item>
+        <item>"#EEAD0E"</item>
+        <item>"#778899"</item>
+        <item>"#00F5FF"</item>
+        <item>"#7D9EC0"</item>
+        <item>"#43CD80"</item>
+        <item>"#FFA54F"</item>
+        <item>"#6E8B3D"</item>
+        <item>"#1874CD"</item>
+        <item>"#4876FF"</item>
+        <item>"#CD8500"</item>
+        <item>"#555555"</item>
+        <item>"#87CEEB"</item>
+        <item>"#EE9572"</item>
+        <item>"#B3EE3A"</item>
+        <item>"#32CD32"</item>
+        <item>"#FA8072"</item>
+        <item>"#F08080"</item>
+        <item>"#FFA500"</item>
+        <item>"#BFEFFF"</item>
+    </array>
+
 </resources>
