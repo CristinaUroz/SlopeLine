@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.TreeSet;
 
 class Multi extends Thread {
 
@@ -23,7 +24,7 @@ class Multi extends Thread {
         int[][] mat_new = new int[mPhotoWidth][mPhotoHeight];
 
         Map<Integer, Set<int[]>> lines = new HashMap<>();
-        Set<int[]> line_pairs = new HashSet<>();
+        Set<int[]> line_pairs = new TreeSet<>(new MyComp());
         Set<int[]> list;
         Set<int[]> list_more;
 
@@ -53,8 +54,8 @@ class Multi extends Thread {
                 String t_n = replace_map.get(t);
                 if (t_n != null) {
                     boolean trobat = false;
-                    list = new HashSet<>();
-                    list_more = new HashSet<>();
+                    list = new TreeSet<>(new MyComp());
+                    list_more = new TreeSet<>(new MyComp());
                     char[] tArray = t_n.toCharArray();
                     int id_aux = -2;
                     for (int Y2 = 0; Y2 < 5; Y2++) {
@@ -200,6 +201,25 @@ class Multi extends Thread {
     // To get the final lines map
     public Map<Integer, Set<int[]>> get_lines() {
         return lines_fi;
+    }
+
+    class MyComp implements Comparator<int[]> {
+        @Override
+        public int compare(int[] a, int[] b) {
+            if (a[0] < b[0]) {
+                return -1;
+            } else if (a[0] > b[0]) {
+                return 1;
+            } else {
+                if (a[1] > b[1]) {
+                    return 1;
+                } else if (a[0] < b[0]) {
+                    return -1;
+                }
+            }
+            return 0;
+        }
+
     }
 
 }
