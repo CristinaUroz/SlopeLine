@@ -6,7 +6,7 @@
     <string name="choose">Choose the image</string>
     <string name="choose_from">Where do you want to take the image from?</string>
     <string name="choose_title">Choose images and color</string>
-    <string name="info_1">Select an image and press play to start the countor lines  detection</string>
+    <string name="info_1">Select an ICGC/IGN image. On preferences, indicate the provider. Move the seek bar until you only see de contour lines in black. Then, press play to start the detection</string>
     <string name="ok">Ok</string>
     <string name="action_settings">Settings</string>
 
@@ -22,8 +22,12 @@
     <string name="preference_title_research_area">Research Area</string>
     <string name="preference_summary_research_area">Number of pixels that will conform the research area of same line pixels [from 1 to 15]</string>
     <string name="preference_dialog_research_area">ResearchArea</string>
-    <string name="preference_default_value_research_area">5</string>
+    <string name="preference_default_value_research_area">9</string>
 
+    <string name="preference_entries_map_type_icgc">ICGC (Institut Cartogràfic de Catalunya))</string>
+    <string name="preference_entries_map_type_ign">IGN (Instituto Geográfico Nacional)</string>
+    <string name="preference_entry_value_map_type_icgc">#7c8767</string>
+    <string name="preference_entry_value_map_type_ign">#b1957f</string>
 
     <string name="info">Information</string>
     <string name="Opencvnotavailalbe">OpenCV not available</string>
@@ -37,6 +41,12 @@
     <string name="image_saved">Image saved succesfully</string>
     <string name="lines_saved">Lines information saved succefully</string>
     <string name="image_lines_saved">Image and lines\' information saved succefully</string>
+    <string name="processing_preferences">Processing preferences</string>
+    <string name="select_map_type">Select map provider</string>
+    <string name="preference_key_map_type">MapProvider</string>
+    <string name="preference_title_map_type">Map Provider</string>
+    <string name="preference_summary_map_type">Select the provider of your map</string>
+    <string name="preference_dialog_title_map_type">Map provider</string>
 
 
     <array name="binaritzation">

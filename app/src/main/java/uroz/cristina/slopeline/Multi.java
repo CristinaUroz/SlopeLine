@@ -3,8 +3,8 @@ package uroz.cristina.slopeline;
 import java.util.Comparator;
 import java.util.Map;
 import java.util.Set;
-import java.util.TreeMap;
-import java.util.TreeSet;
+import java.util.HashMap;
+import java.util.HashSet;
 
 class Multi extends Thread {
 
@@ -22,8 +22,8 @@ class Multi extends Thread {
 
         int[][] mat_new = new int[mPhotoWidth][mPhotoHeight];
 
-        Map<Integer, Set<int[]>> lines = new TreeMap<>();
-        Set<int[]> line_pairs = new TreeSet<>(new MyComp());
+        Map<Integer, Set<int[]>> lines = new HashMap<>();
+        Set<int[]> line_pairs = new HashSet<>();
         Set<int[]> list;
         Set<int[]> list_more;
 
@@ -53,8 +53,8 @@ class Multi extends Thread {
                 String t_n = replace_map.get(t);
                 if (t_n != null) {
                     boolean trobat = false;
-                    list = new TreeSet<>(new MyComp());
-                    list_more = new TreeSet<>(new MyComp());
+                    list = new HashSet<>();
+                    list_more = new HashSet<>();
                     char[] tArray = t_n.toCharArray();
                     int id_aux = -2;
                     for (int Y2 = 0; Y2 < 5; Y2++) {
@@ -134,7 +134,7 @@ class Multi extends Thread {
         }
 
         // Put together lines that are the same
-        lines_fi = new TreeMap<>();
+        lines_fi = new HashMap<>();
 
         id = 0;
         for (int[] i : line_pairs) {
@@ -202,23 +202,4 @@ class Multi extends Thread {
         return lines_fi;
     }
 
-    // Comparator for the treeSets
-    class MyComp implements Comparator<int[]> {
-        @Override
-        public int compare(int[] a, int[] b) {
-            if (a[0] < b[0]) {
-                return -1;
-            } else if (a[0] > b[0]) {
-                return 1;
-            } else {
-                if (a[1] > b[1]) {
-                    return 1;
-                } else if (a[0] < b[0]) {
-                    return -1;
-                }
-            }
-            return 0;
-        }
-
-    }
 }

@@ -35,6 +35,8 @@ import java.io.RandomAccessFile;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
+import static uroz.cristina.slopeline.R.string.preference_entry_value_map_type_icgc;
+
 
 public class SelectFileActivity extends AppCompatActivity {
 
@@ -53,7 +55,6 @@ public class SelectFileActivity extends AppCompatActivity {
     // Default values
     private int bar_value = 50; // Default tolerance bar value
     private int pix_max = 1200; // For resize the image if it too big
-    private int contour_lines_color = Color.parseColor("#7c8767"); // Contour lines default color
 
     // For saving files
     private File dir;
@@ -154,7 +155,7 @@ public class SelectFileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Open gallery to choose an image
-                Intent pickPhoto = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                Intent pickPhoto = new Intent(Intent.ACTION_OPEN_DOCUMENT, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(pickPhoto, 0);
             }
         });
@@ -175,7 +176,10 @@ public class SelectFileActivity extends AppCompatActivity {
                         getString(R.string.preference_default_value_skipped_pixels)));
                 int r_a = Integer.parseInt(preferences.getString(getString(R.string.preference_key_research_area),
                         getString(R.string.preference_default_value_research_area)));
+                String color = preferences.getString(getString(R.string.preference_key_map_type),
+                        getString(preference_entry_value_map_type_icgc));
                 intent.putExtra("skipped_pixels", s_p);
+                intent.putExtra("color", color);
                 intent.putExtra("research_area", r_a);
 
                 startActivity(intent);
@@ -339,6 +343,11 @@ public class SelectFileActivity extends AppCompatActivity {
 
     // Bitmap binarization
     private void binarization() {
+
+        final SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(SelectFileActivity.this);
+        final int contour_lines_color = Color.parseColor(preferences.getString(getString(R.string.preference_key_map_type),
+                getString(preference_entry_value_map_type_icgc)));
+
         bm_mutable = convertToMutable(bm);
         mPhotoWidth = bm_mutable.getWidth();
         mPhotoHeight = bm_mutable.getHeight();

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="preference_entries_map_type">
+        <item>@string/preference_entries_map_type_icgc</item>
+        <item>@string/preference_entries_map_type_ign</item>
+    </string-array>
+    <string-array name="preference_entry_values_map_type">
+        <item>@string/preference_entry_value_map_type_icgc</item>
+        <item>@string/preference_entry_value_map_type_ign</item>
+    </string-array>
+
 
 </resources>

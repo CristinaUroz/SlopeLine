@@ -2,7 +2,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
-        android:title="@string/preferences">
+        android:title="@string/processing_preferences">
         <EditTextPreference
             android:key="@string/preference_key_skipped_pixels"
             android:title="@string/preference_title_skipped_pixels"
@@ -19,4 +19,15 @@
             android:inputType="number"/>
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/select_map_type">
+        <ListPreference
+            android:key="@string/preference_key_map_type"
+            android:title="@string/preference_title_map_type"
+            android:summary="@string/preference_summary_map_type"
+            android:entries="@array/preference_entries_map_type"
+            android:entryValues="@array/preference_entry_values_map_type"
+            android:dialogTitle="@string/preference_dialog_title_map_type"
+            android:defaultValue="@string/preference_entry_value_map_type_icgc"/>
+    </PreferenceCategory>
 </PreferenceScreen>

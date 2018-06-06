@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.Calendar;
 import java.util.Map;
 import java.util.Set;
-import java.util.TreeMap;
+import java.util.HashMap;
 
 import static android.graphics.Bitmap.Config.ARGB_8888;
 
@@ -47,12 +47,12 @@ public class Processing extends AppCompatActivity {
     private int skipped_pixels; // Skip pixels for searching in the dictionary
     private int[][] mat; // Pixels values
     private String[] colors = new String[416]; // List of colors
-    private Map<String, String> replace_map = new TreeMap<String, String>(); // Dictionary
+    private Map<String, String> replace_map = new HashMap<String, String>(); // Dictionary
     private Map<Integer, Set<int[]>> lines_fi; // Map with the id of the contour line and all its pixels
     private Uri ima_uri; // Uri of the map image
     private Bitmap bm; // Image map bitmap (resized)
     private Bitmap bm_mutable; // Mutable image map bitmap (resized)
-
+    private int contour_lines_color;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +72,7 @@ public class Processing extends AppCompatActivity {
         bar_value = extras.getInt("bar_value");
         research_area = extras.getInt("research_area");
         skipped_pixels = extras.getInt("skipped_pixels");
+        contour_lines_color = Color.parseColor(extras.getString("color"));
         if(research_area<1){
             research_area=1;
         }
@@ -215,7 +216,7 @@ public class Processing extends AppCompatActivity {
             return;
         }
 
-        int contour_lines_color = Color.parseColor("#7c8767");
+
         int[] pix = new int[mPhotoWidth * mPhotoHeight];
         int index, r, g, b, yy, R, G, B, Y;
         R = (contour_lines_color >> 16) & 0xff;
@@ -239,7 +240,6 @@ public class Processing extends AppCompatActivity {
                         B + tol >= b && B - tol <= b &&
                         G + tol >= g && G - tol <= g
                 )) {
-                    //pix[index] = getResources().getColor(transparent);
                     mat[x][y] = 0;
 
                 } else {
@@ -300,7 +300,7 @@ public class Processing extends AppCompatActivity {
                     dir.mkdirs();
                 }
 
-                File file = new File(fullPath + "Lap-" + lines_name + ".txt");
+                File file = new File(fullPath + "Lines-" + lines_name + ".txt");
                 if (!file.exists()) {
                     file.createNewFile();
 
@@ -331,12 +331,12 @@ public class Processing extends AppCompatActivity {
         if (!dir.exists()) {
             dir.mkdirs();
         }
-        String fname = "Map-" + image_name + ".jpg";
+        String fname = "Map-" + image_name;
         File file = new File(dir, fname);
         if (file.exists()) file.delete();
         try {
             FileOutputStream out = new FileOutputStream(file);
-            finalBitmap.compress(Bitmap.CompressFormat.JPEG, 90, out);
+            finalBitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
             out.flush();
             out.close();
         } catch (Exception e) {
