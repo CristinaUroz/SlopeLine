@@ -1,5 +1,6 @@
 
 APLICACIÓ ANDROID CAPAÇ DE LLEGIR I INTERPRETAR EL RELLEU DE MAPES TOPOGRÀFICS
+
 S'està desenvolupant aquesta aplicació com a treball de final de grau de la Cristina Uroz Grané. 
 El treball consisteix en el desenvolupament d'una aplicació per a mòbils Android que, 
 donada una imatge d'un mapa topogràfic, sigui capaç de detectar-ne les corbes de nivell 
@@ -8,9 +9,10 @@ realitzar diferents càlculs (desnivell acummulat, represetnació en 2D del rell
 estimat de realització...) sobre rutes proposades per l'usuari. 
 El nom d'aqueta aplicació és SlopeLine.
 
-
+.
 
 APLICACIÓN ANDROID CAPAZ DE LEER E INTERPRETAR EL RELIEVE DE MAPAS TOPOGRÁFICOS 
+
 Se está desenvolupando esta aplicación cómo trabajo de fin de grado de Cristina Uroz Grané.
 El trabajo consiste en el desenvolupamiento de una aplicación para móbiles android que, 
 dada una imagen de un mapa topogràfico, sea capaz de detectar las curvas de nivel y su 
@@ -19,9 +21,10 @@ diferentes cáculos (desnivel acumulado, representación en 2D del relieve, tiem
 de realización...) sobre rutas propuestas por el usuario. 
 El nombre de esta aplicación es SlopeLine.
 
-
+.
 
 ANDROID APPLICATION FOR READING AND INTERPRETING THE RELIEF OF TOPOGRAPHIC MAPS
+
 This application is in developement as a final-grade work by Cristina Uroz Grané.
 The work consists in the development of an application for Android mobiles that,
 given an image of a topographic map, it is capable of detecting the contour lines
