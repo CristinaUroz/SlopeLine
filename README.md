@@ -10,6 +10,7 @@ estimat de realització...) sobre rutes proposades per l'usuari.
 El nom d'aqueta aplicació és SlopeLine.
 
 
+
 APLICACIÓN ANDROID CAPAZ DE LEER E INTERPRETAR EL RELIEVE DE MAPAS TOPOGRÁFICOS 
 
 Se está desenvolupando esta aplicación cómo trabajo de fin de grado de Cristina Uroz Grané.
@@ -19,6 +20,7 @@ altura. A partir de esta información crear una representación 3D del mapa y re
 diferentes cáculos (desnivel acumulado, representación en 2D del relieve, tiempo estimado 
 de realización...) sobre rutas propuestas por el usuario. 
 El nombre de esta aplicación es SlopeLine.
+
 
 
 ANDROID APPLICATION FOR READING AND INTERPRETING THE RELIEF OF TOPOGRAPHIC MAPS
