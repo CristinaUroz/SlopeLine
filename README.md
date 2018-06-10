@@ -1,8 +1,4 @@
 
-/////////////////////////////////////////////////////////////////////
-
-CATALÀ //////////////////////////////////////////////////////////////
-
 APLICACIÓ ANDROID CAPAÇ DE LLEGIR I INTERPRETAR EL RELLEU DE MAPES TOPOGRÀFICS
 
 S'està desenvolupant aquesta aplicació com a treball de final de grau de la Cristina Uroz Grané. 
@@ -14,10 +10,6 @@ estimat de realització...) sobre rutes proposades per l'usuari.
 El nom d'aqueta aplicació és SlopeLine.
 
 
-/////////////////////////////////////////////////////////////////////
-
-CASTELLANO //////////////////////////////////////////////////////////
-
 APLICACIÓN ANDROID CAPAZ DE LEER E INTERPRETAR EL RELIEVE DE MAPAS TOPOGRÁFICOS 
 
 Se está desenvolupando esta aplicación cómo trabajo de fin de grado de Cristina Uroz Grané.
@@ -28,10 +20,6 @@ diferentes cáculos (desnivel acumulado, representación en 2D del relieve, tiem
 de realización...) sobre rutas propuestas por el usuario. 
 El nombre de esta aplicación es SlopeLine.
 
-
-/////////////////////////////////////////////////////////////////////
-
-ENGLISH /////////////////////////////////////////////////////////////
 
 ANDROID APPLICATION FOR READING AND INTERPRETING THE RELIEF OF TOPOGRAPHIC MAPS
 
